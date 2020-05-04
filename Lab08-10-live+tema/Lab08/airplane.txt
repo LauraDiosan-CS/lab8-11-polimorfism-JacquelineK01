@@ -1,0 +1,3 @@
+3 Alba Bucuresti 14.04.2012 0 130 85
+4 Timisoara Bayern 14.04.2012 1 10 3
+5 Cluj Iasi 14.04.2012 0 13 2

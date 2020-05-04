@@ -1,0 +1,4 @@
+Cod: 7 Plecare: Cluj Destinatie: Constanta Data: 14.04.2012 Durata(zile): 1 Nr.Locuri Totale:13 Nr.Locuri Rezervate: 2
+Cod: 3 Plecare: Alba Destinatie: Bucuresti Data: 14.04.2012 Escala: NU Nr.Locuri Totale:130 Nr.Locuri Rezervate: 85
+Cod: 4 Plecare: Timisoara Destinatie: Bayern Data: 14.04.2012 Escala: DA Nr.Locuri Totale:10 Nr.Locuri Rezervate: 3
+Cod: 5 Plecare: Cluj Destinatie: Iasi Data: 14.04.2012 Escala: NU Nr.Locuri Totale:13 Nr.Locuri Rezervate: 2

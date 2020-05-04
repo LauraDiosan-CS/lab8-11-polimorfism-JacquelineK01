@@ -1,0 +1,5 @@
+Cod,Plecare,Destinatie,Data,Durata(zile),Escala,Nr. Locuri totale,Nr. Locuri Rezervate
+"7","Cluj","Constanta","14.04.2012","1","-","13","2"
+"3","Alba","Test","14.04.2012"," ","NU","130","85"
+"4","Alba","Bayern","14.04.2012"," ","DA","10","3"
+"5","Cluj","Test","14.04.2012"," ","NU","13","2"
