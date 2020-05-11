@@ -1,0 +1,2 @@
+Cod: 2 Plecare: Constanta Destinatie: Brasov Data: 15.07.2020 Durata(zile): 1 Nr.Locuri Totale:40 Nr.Locuri Rezervate: 26
+Cod: 1x54 Plecare: Cluj-Napoca Destinatie: Dubai Data: 14.06.2020 Escala: NU Nr.Locuri Totale:100 Nr.Locuri Rezervate: 80

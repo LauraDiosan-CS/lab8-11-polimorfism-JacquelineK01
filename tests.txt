@@ -1,0 +1,2 @@
+Cod: 2 Plecare: Arad Destinatie: Sibiu Data: 14.04.2016 Durata(zile): 3 Nr.Locuri Totale:10 Nr.Locuri Rezervate: 9
+Cod: 5 Plecare: Cluj Destinatie: Iasi Data: 14.04.2012 Escala: NU Nr.Locuri Totale:13 Nr.Locuri Rezervate: 2
