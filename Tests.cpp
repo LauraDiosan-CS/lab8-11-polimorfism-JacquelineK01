@@ -19,7 +19,8 @@ void Tests::runTests()
 	testEqualityOperator();
 	
 	runLab10Tests();
-	runLab11Tests();
+	//runLab11Tests();
+	runLab12Tests();
 }
 
 void Tests::runRepoTests()
@@ -267,3 +268,71 @@ void Tests::runLab11Tests()
 		std::cout << e.what() << '\n';
 	}
 }
+
+
+//-------------------------TESTE LABORATORUL 12 LIVE--------------------------------
+
+void resetElements(Service& s, std::vector<Calatorie> calatoriiDefault) {
+	s.emptyTrips();
+	for (Calatorie c : calatoriiDefault)
+		s.addTrip(c);
+}
+
+void Tests::runLab12Tests()	
+{
+	CalatorieAvion c1("156", "Cluj - Napoca", "Dubai", "14.06.2020", false, 100, 80);
+	CalatorieAutobuz c2("873", "Constanta", "Cluj - Napoca", "15.07.2020", 1, 40, 20);
+	CalatorieAutobuz c3("118", "Vienna", "Bucuresti", "14.06.2020", 3, 80, 50);
+	CalatorieAvion c4("122", "Bucuresti", "Cluj - Napoca", "14.06.2020", false, 100, 80);
+	CalatorieAvion c5("122", "Cluj - Napoca", "Bucuresti", "14.06.2020", false, 100, 80);
+
+
+	Service service;
+	std::vector<Calatorie> defaultTrips;
+	defaultTrips.push_back(c1);
+	defaultTrips.push_back(c2);
+	defaultTrips.push_back(c3);
+	defaultTrips.push_back(c4);
+	defaultTrips.push_back(c5);
+
+	resetElements(service, defaultTrips);
+
+	service.deleteTrip2(c1);
+	
+	assert(service.getSize() == 3);
+	assert(service.getElementAtPosition(0) == c2);
+	assert(service.getElementAtPosition(1) == c3);
+	assert(service.getElementAtPosition(2) == c5);
+	
+	resetElements(service, defaultTrips);
+
+	service.deleteTrip2(c2);
+	assert(service.getSize() == 4);
+	assert(service.getElementAtPosition(0) == c1);
+	assert(service.getElementAtPosition(1) == c3);
+	assert(service.getElementAtPosition(2) == c4);
+	assert(service.getElementAtPosition(3) == c5);
+
+	resetElements(service, defaultTrips);
+
+	service.deleteTrip2(c3);
+	assert(service.getSize() == 3);
+	assert(service.getElementAtPosition(0) == c1);
+	assert(service.getElementAtPosition(1) == c2);
+	assert(service.getElementAtPosition(2) == c5);
+
+	resetElements(service, defaultTrips);
+	service.deleteTrip2(c4);
+	assert(service.getSize() == 1);
+	assert(service.getElementAtPosition(0) == c2);
+
+
+	resetElements(service, defaultTrips);
+	service.deleteTrip2(c5);
+	assert(service.getSize() == 3);
+	assert(service.getElementAtPosition(0) == c1);
+	assert(service.getElementAtPosition(1) == c2);
+	assert(service.getElementAtPosition(2) == c3);
+	
+}
+

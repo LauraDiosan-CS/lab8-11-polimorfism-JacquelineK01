@@ -24,5 +24,6 @@ private:
 
 	void runLab10Tests();
 	void runLab11Tests();
+	void runLab12Tests();
 };
 

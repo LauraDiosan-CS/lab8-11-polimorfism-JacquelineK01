@@ -43,9 +43,6 @@ public:
 		this->calatoriiAutobuz.push_back(c);
 	};*/
 	void addTrip(Calatorie c) {
-		for (int i = 0; i < calatorii.size(); ++i)
-			if (calatorii[i].getCod() == c.getCod())
-				throw RepoException{ "Trip already in the list\n" };
 		this->calatorii.push_back(c);
 	}
 	void deleteTrip(std::string code, char* destination) {
@@ -95,6 +92,7 @@ public:
 	}
 
 	void scrieCalatoriiDinVectorInFisier(std::vector<Calatorie> calatorii);
-	
+	void emptyTrips() { calatoriiAvion.clear(); calatoriiAutobuz.clear(); calatorii.clear(); };
+
 };
 
